@@ -4,7 +4,7 @@ import { ApplicationModule } from "./application/application.module";
 import { JobListingModule } from "./jobListing/jobListing.module";
 import { ApplicantModule } from "./applicant/applicant.module";
 import { HealthModule } from "./health/health.module";
-import { PrismaModule } from "./prisma/prisma.module";
+// import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
 import { ServeStaticModule } from "@nestjs/serve-static";
 import { ServeStaticOptionsService } from "./serveStaticOptions.service";
@@ -20,7 +20,7 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
     JobListingModule,
     ApplicantModule,
     HealthModule,
-    PrismaModule,
+    // PrismaModule,
     SecretsManagerModule,
     ConfigModule.forRoot({ isGlobal: true }),
     ServeStaticModule.forRootAsync({
